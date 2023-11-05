@@ -7,21 +7,91 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38174F472AF7E19900B0EAEC /* AVAudioFile+Sampling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38174F462AF7E19900B0EAEC /* AVAudioFile+Sampling.swift */; };
+		38174F492AF7F7C000B0EAEC /* UIImage+Insets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38174F482AF7F7C000B0EAEC /* UIImage+Insets.swift */; };
 		383FD5C12AF03D6E000D02E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383FD5C02AF03D6E000D02E4 /* AppDelegate.swift */; };
 		383FD5C32AF03D6E000D02E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383FD5C22AF03D6E000D02E4 /* SceneDelegate.swift */; };
-		383FD5C52AF03D6E000D02E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383FD5C42AF03D6E000D02E4 /* ViewController.swift */; };
 		383FD5CA2AF03D72000D02E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 383FD5C92AF03D72000D02E4 /* Assets.xcassets */; };
 		383FD5CD2AF03D72000D02E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 383FD5CB2AF03D72000D02E4 /* LaunchScreen.storyboard */; };
+		3857A40F2AF13AC300E2CE84 /* SampleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3857A40E2AF13AC300E2CE84 /* SampleButton.swift */; };
+		3857A4112AF13EAC00E2CE84 /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3857A4102AF13EAC00E2CE84 /* Shadow.swift */; };
+		3857A4752AF14A3700E2CE84 /* AudioLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3857A4742AF14A3700E2CE84 /* AudioLayer.swift */; };
+		3857A4772AF14B1300E2CE84 /* AudioMixer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3857A4762AF14B1300E2CE84 /* AudioMixer.swift */; };
+		386B72222AF6C37E007FBD44 /* AudioEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386B72212AF6C37E007FBD44 /* AudioEffect.swift */; };
+		387F170B2AF2D8CF00AC65C8 /* AudioLayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387F170A2AF2D8CF00AC65C8 /* AudioLayerViewController.swift */; };
+		387F170D2AF2D9CF00AC65C8 /* AudioSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387F170C2AF2D9CF00AC65C8 /* AudioSample.swift */; };
+		387F171C2AF2E4BE00AC65C8 /* unison-bend.wav in Resources */ = {isa = PBXBuildFile; fileRef = 387F17102AF2E4BD00AC65C8 /* unison-bend.wav */; };
+		387F171D2AF2E4BE00AC65C8 /* muted.wav in Resources */ = {isa = PBXBuildFile; fileRef = 387F17112AF2E4BD00AC65C8 /* muted.wav */; };
+		387F17212AF2E4BE00AC65C8 /* oldfunk.wav in Resources */ = {isa = PBXBuildFile; fileRef = 387F17162AF2E4BE00AC65C8 /* oldfunk.wav */; };
+		387F17222AF2E4BE00AC65C8 /* outdoor.wav in Resources */ = {isa = PBXBuildFile; fileRef = 387F17172AF2E4BE00AC65C8 /* outdoor.wav */; };
+		387F17232AF2E4BE00AC65C8 /* oyaebu.wav in Resources */ = {isa = PBXBuildFile; fileRef = 387F17182AF2E4BE00AC65C8 /* oyaebu.wav */; };
+		387F17242AF2E4BE00AC65C8 /* trumpet-2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 387F171A2AF2E4BE00AC65C8 /* trumpet-2.wav */; };
+		387F17252AF2E4BE00AC65C8 /* trumpet-1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 387F171B2AF2E4BE00AC65C8 /* trumpet-1.wav */; };
+		387F17272AF2E74E00AC65C8 /* AudioSampleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387F17262AF2E74E00AC65C8 /* AudioSampleFactory.swift */; };
+		387F172B2AF2F2E000AC65C8 /* ContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387F172A2AF2F2E000AC65C8 /* ContextMenu.swift */; };
+		387F172D2AF30FD900AC65C8 /* ContextMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387F172C2AF30FD900AC65C8 /* ContextMenuViewController.swift */; };
+		387F17302AF310FD00AC65C8 /* ChooseSampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387F172F2AF310FD00AC65C8 /* ChooseSampleTableViewCell.swift */; };
+		387F17932AF3E22300AC65C8 /* ContextMenuSuitable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387F17922AF3E22300AC65C8 /* ContextMenuSuitable.swift */; };
+		387F17962AF3E2E200AC65C8 /* ChooseSampleContextMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387F17952AF3E2E200AC65C8 /* ChooseSampleContextMenuView.swift */; };
+		3887E6E82AF55D420094C725 /* funk-lead.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3887E6E72AF55D420094C725 /* funk-lead.wav */; };
+		3887E6EA2AF561970094C725 /* AudioMixingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3887E6E92AF561970094C725 /* AudioMixingManager.swift */; };
+		3887E6EC2AF565EE0094C725 /* ChooseLayerContextMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3887E6EB2AF565EE0094C725 /* ChooseLayerContextMenuView.swift */; };
+		3887E6EE2AF566030094C725 /* ChooseLayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3887E6ED2AF566030094C725 /* ChooseLayerTableViewCell.swift */; };
+		3887E6F02AF5B45D0094C725 /* AudioInstrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3887E6EF2AF5B45D0094C725 /* AudioInstrument.swift */; };
+		3887E6F72AF68CFB0094C725 /* UISlider+init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3887E6F62AF68CFB0094C725 /* UISlider+init.swift */; };
+		3887E6F92AF68F1E0094C725 /* MultisliderControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3887E6F82AF68F1E0094C725 /* MultisliderControl.swift */; };
+		3887E6FB2AF693800094C725 /* String+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3887E6FA2AF693800094C725 /* String+UIImage.swift */; };
+		38C4037E2AF8215900B5DD82 /* AudioOutputRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C4037D2AF8215900B5DD82 /* AudioOutputRecorder.swift */; };
+		38F524D52AF6C7930014B83A /* AudioEffectMultisliderControlPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F524D42AF6C7930014B83A /* AudioEffectMultisliderControlPresentable.swift */; };
+		38F524D72AF6FD370014B83A /* RecordAudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F524D62AF6FD370014B83A /* RecordAudioViewController.swift */; };
+		38F524D92AF7003F0014B83A /* BeatTrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F524D82AF7003F0014B83A /* BeatTrackerView.swift */; };
+		38F524DB2AF786340014B83A /* AudioMicrophoneRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F524DA2AF786340014B83A /* AudioMicrophoneRecorder.swift */; };
+		38F5253C2AF7D1F60014B83A /* AddContextMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F5253B2AF7D1F60014B83A /* AddContextMenuTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38174F462AF7E19900B0EAEC /* AVAudioFile+Sampling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVAudioFile+Sampling.swift"; sourceTree = "<group>"; };
+		38174F482AF7F7C000B0EAEC /* UIImage+Insets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Insets.swift"; sourceTree = "<group>"; };
 		383FD5BD2AF03D6E000D02E4 /* BeatHoven.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeatHoven.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		383FD5C02AF03D6E000D02E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		383FD5C22AF03D6E000D02E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		383FD5C42AF03D6E000D02E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		383FD5C92AF03D72000D02E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		383FD5CC2AF03D72000D02E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		383FD5CE2AF03D72000D02E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3857A40E2AF13AC300E2CE84 /* SampleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleButton.swift; sourceTree = "<group>"; };
+		3857A4102AF13EAC00E2CE84 /* Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
+		3857A4742AF14A3700E2CE84 /* AudioLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioLayer.swift; sourceTree = "<group>"; };
+		3857A4762AF14B1300E2CE84 /* AudioMixer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioMixer.swift; sourceTree = "<group>"; };
+		386B72212AF6C37E007FBD44 /* AudioEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioEffect.swift; sourceTree = "<group>"; };
+		387F170A2AF2D8CF00AC65C8 /* AudioLayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioLayerViewController.swift; sourceTree = "<group>"; };
+		387F170C2AF2D9CF00AC65C8 /* AudioSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSample.swift; sourceTree = "<group>"; };
+		387F17102AF2E4BD00AC65C8 /* unison-bend.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "unison-bend.wav"; sourceTree = "<group>"; };
+		387F17112AF2E4BD00AC65C8 /* muted.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = muted.wav; sourceTree = "<group>"; };
+		387F17162AF2E4BE00AC65C8 /* oldfunk.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = oldfunk.wav; sourceTree = "<group>"; };
+		387F17172AF2E4BE00AC65C8 /* outdoor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = outdoor.wav; sourceTree = "<group>"; };
+		387F17182AF2E4BE00AC65C8 /* oyaebu.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = oyaebu.wav; sourceTree = "<group>"; };
+		387F171A2AF2E4BE00AC65C8 /* trumpet-2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "trumpet-2.wav"; sourceTree = "<group>"; };
+		387F171B2AF2E4BE00AC65C8 /* trumpet-1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "trumpet-1.wav"; sourceTree = "<group>"; };
+		387F17262AF2E74E00AC65C8 /* AudioSampleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSampleFactory.swift; sourceTree = "<group>"; };
+		387F172A2AF2F2E000AC65C8 /* ContextMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenu.swift; sourceTree = "<group>"; };
+		387F172C2AF30FD900AC65C8 /* ContextMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenuViewController.swift; sourceTree = "<group>"; };
+		387F172F2AF310FD00AC65C8 /* ChooseSampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseSampleTableViewCell.swift; sourceTree = "<group>"; };
+		387F17922AF3E22300AC65C8 /* ContextMenuSuitable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenuSuitable.swift; sourceTree = "<group>"; };
+		387F17952AF3E2E200AC65C8 /* ChooseSampleContextMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseSampleContextMenuView.swift; sourceTree = "<group>"; };
+		3887E6E72AF55D420094C725 /* funk-lead.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "funk-lead.wav"; sourceTree = "<group>"; };
+		3887E6E92AF561970094C725 /* AudioMixingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioMixingManager.swift; sourceTree = "<group>"; };
+		3887E6EB2AF565EE0094C725 /* ChooseLayerContextMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseLayerContextMenuView.swift; sourceTree = "<group>"; };
+		3887E6ED2AF566030094C725 /* ChooseLayerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseLayerTableViewCell.swift; sourceTree = "<group>"; };
+		3887E6EF2AF5B45D0094C725 /* AudioInstrument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioInstrument.swift; sourceTree = "<group>"; };
+		3887E6F62AF68CFB0094C725 /* UISlider+init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISlider+init.swift"; sourceTree = "<group>"; };
+		3887E6F82AF68F1E0094C725 /* MultisliderControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultisliderControl.swift; sourceTree = "<group>"; };
+		3887E6FA2AF693800094C725 /* String+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+UIImage.swift"; sourceTree = "<group>"; };
+		38C4037D2AF8215900B5DD82 /* AudioOutputRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioOutputRecorder.swift; sourceTree = "<group>"; };
+		38F524D42AF6C7930014B83A /* AudioEffectMultisliderControlPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioEffectMultisliderControlPresentable.swift; sourceTree = "<group>"; };
+		38F524D62AF6FD370014B83A /* RecordAudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordAudioViewController.swift; sourceTree = "<group>"; };
+		38F524D82AF7003F0014B83A /* BeatTrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatTrackerView.swift; sourceTree = "<group>"; };
+		38F524DA2AF786340014B83A /* AudioMicrophoneRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioMicrophoneRecorder.swift; sourceTree = "<group>"; };
+		38F5253B2AF7D1F60014B83A /* AddContextMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContextMenuTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +124,137 @@
 		383FD5BF2AF03D6E000D02E4 /* BeatHoven */ = {
 			isa = PBXGroup;
 			children = (
+				387F170E2AF2DCDC00AC65C8 /* AudioResources */,
+				3857A4732AF14A0F00E2CE84 /* Audio */,
+				3857A40D2AF13A8C00E2CE84 /* UI */,
 				383FD5C02AF03D6E000D02E4 /* AppDelegate.swift */,
 				383FD5C22AF03D6E000D02E4 /* SceneDelegate.swift */,
-				383FD5C42AF03D6E000D02E4 /* ViewController.swift */,
 				383FD5C92AF03D72000D02E4 /* Assets.xcassets */,
 				383FD5CB2AF03D72000D02E4 /* LaunchScreen.storyboard */,
 				383FD5CE2AF03D72000D02E4 /* Info.plist */,
 			);
 			path = BeatHoven;
+			sourceTree = "<group>";
+		};
+		3857A40D2AF13A8C00E2CE84 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				38C403802AF8251900B5DD82 /* ViewControllers */,
+				38C4037F2AF8250900B5DD82 /* Extensions */,
+				3887E6F12AF62A410094C725 /* CustomElements */,
+				387F172E2AF310D100AC65C8 /* ContextMenu */,
+				3857A4102AF13EAC00E2CE84 /* Shadow.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		3857A4732AF14A0F00E2CE84 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				3857A4762AF14B1300E2CE84 /* AudioMixer.swift */,
+				386B72212AF6C37E007FBD44 /* AudioEffect.swift */,
+				3857A4742AF14A3700E2CE84 /* AudioLayer.swift */,
+				3887E6E92AF561970094C725 /* AudioMixingManager.swift */,
+				3887E6EF2AF5B45D0094C725 /* AudioInstrument.swift */,
+				387F170C2AF2D9CF00AC65C8 /* AudioSample.swift */,
+				387F17262AF2E74E00AC65C8 /* AudioSampleFactory.swift */,
+				38F524DA2AF786340014B83A /* AudioMicrophoneRecorder.swift */,
+				38C4037D2AF8215900B5DD82 /* AudioOutputRecorder.swift */,
+				38174F462AF7E19900B0EAEC /* AVAudioFile+Sampling.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		387F170E2AF2DCDC00AC65C8 /* AudioResources */ = {
+			isa = PBXGroup;
+			children = (
+				387F17142AF2E4BE00AC65C8 /* Drums */,
+				387F17192AF2E4BE00AC65C8 /* Flute */,
+				387F170F2AF2E4BD00AC65C8 /* Guitar */,
+			);
+			path = AudioResources;
+			sourceTree = "<group>";
+		};
+		387F170F2AF2E4BD00AC65C8 /* Guitar */ = {
+			isa = PBXGroup;
+			children = (
+				3887E6E72AF55D420094C725 /* funk-lead.wav */,
+				387F17102AF2E4BD00AC65C8 /* unison-bend.wav */,
+				387F17112AF2E4BD00AC65C8 /* muted.wav */,
+			);
+			path = Guitar;
+			sourceTree = "<group>";
+		};
+		387F17142AF2E4BE00AC65C8 /* Drums */ = {
+			isa = PBXGroup;
+			children = (
+				387F17162AF2E4BE00AC65C8 /* oldfunk.wav */,
+				387F17172AF2E4BE00AC65C8 /* outdoor.wav */,
+				387F17182AF2E4BE00AC65C8 /* oyaebu.wav */,
+			);
+			path = Drums;
+			sourceTree = "<group>";
+		};
+		387F17192AF2E4BE00AC65C8 /* Flute */ = {
+			isa = PBXGroup;
+			children = (
+				387F171A2AF2E4BE00AC65C8 /* trumpet-2.wav */,
+				387F171B2AF2E4BE00AC65C8 /* trumpet-1.wav */,
+			);
+			path = Flute;
+			sourceTree = "<group>";
+		};
+		387F172E2AF310D100AC65C8 /* ContextMenu */ = {
+			isa = PBXGroup;
+			children = (
+				387F17942AF3E2C700AC65C8 /* ContextMenuViews */,
+				387F172C2AF30FD900AC65C8 /* ContextMenuViewController.swift */,
+				387F172A2AF2F2E000AC65C8 /* ContextMenu.swift */,
+			);
+			path = ContextMenu;
+			sourceTree = "<group>";
+		};
+		387F17942AF3E2C700AC65C8 /* ContextMenuViews */ = {
+			isa = PBXGroup;
+			children = (
+				387F17922AF3E22300AC65C8 /* ContextMenuSuitable.swift */,
+				387F17952AF3E2E200AC65C8 /* ChooseSampleContextMenuView.swift */,
+				387F172F2AF310FD00AC65C8 /* ChooseSampleTableViewCell.swift */,
+				3887E6EB2AF565EE0094C725 /* ChooseLayerContextMenuView.swift */,
+				3887E6ED2AF566030094C725 /* ChooseLayerTableViewCell.swift */,
+				38F5253B2AF7D1F60014B83A /* AddContextMenuTableViewCell.swift */,
+			);
+			path = ContextMenuViews;
+			sourceTree = "<group>";
+		};
+		3887E6F12AF62A410094C725 /* CustomElements */ = {
+			isa = PBXGroup;
+			children = (
+				3857A40E2AF13AC300E2CE84 /* SampleButton.swift */,
+				3887E6F82AF68F1E0094C725 /* MultisliderControl.swift */,
+				38F524D42AF6C7930014B83A /* AudioEffectMultisliderControlPresentable.swift */,
+				38F524D82AF7003F0014B83A /* BeatTrackerView.swift */,
+			);
+			path = CustomElements;
+			sourceTree = "<group>";
+		};
+		38C4037F2AF8250900B5DD82 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3887E6F62AF68CFB0094C725 /* UISlider+init.swift */,
+				3887E6FA2AF693800094C725 /* String+UIImage.swift */,
+				38174F482AF7F7C000B0EAEC /* UIImage+Insets.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		38C403802AF8251900B5DD82 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				387F170A2AF2D8CF00AC65C8 /* AudioLayerViewController.swift */,
+				38F524D62AF6FD370014B83A /* RecordAudioViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,7 +315,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				387F171D2AF2E4BE00AC65C8 /* muted.wav in Resources */,
+				387F17212AF2E4BE00AC65C8 /* oldfunk.wav in Resources */,
+				387F17232AF2E4BE00AC65C8 /* oyaebu.wav in Resources */,
+				387F17252AF2E4BE00AC65C8 /* trumpet-1.wav in Resources */,
 				383FD5CD2AF03D72000D02E4 /* LaunchScreen.storyboard in Resources */,
+				387F17222AF2E4BE00AC65C8 /* outdoor.wav in Resources */,
+				387F171C2AF2E4BE00AC65C8 /* unison-bend.wav in Resources */,
+				387F17242AF2E4BE00AC65C8 /* trumpet-2.wav in Resources */,
+				3887E6E82AF55D420094C725 /* funk-lead.wav in Resources */,
 				383FD5CA2AF03D72000D02E4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,9 +335,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				383FD5C52AF03D6E000D02E4 /* ViewController.swift in Sources */,
+				38F524DB2AF786340014B83A /* AudioMicrophoneRecorder.swift in Sources */,
+				38F524D72AF6FD370014B83A /* RecordAudioViewController.swift in Sources */,
+				3887E6EC2AF565EE0094C725 /* ChooseLayerContextMenuView.swift in Sources */,
+				3887E6EE2AF566030094C725 /* ChooseLayerTableViewCell.swift in Sources */,
+				386B72222AF6C37E007FBD44 /* AudioEffect.swift in Sources */,
+				38F5253C2AF7D1F60014B83A /* AddContextMenuTableViewCell.swift in Sources */,
+				387F170B2AF2D8CF00AC65C8 /* AudioLayerViewController.swift in Sources */,
+				3887E6F02AF5B45D0094C725 /* AudioInstrument.swift in Sources */,
+				387F17302AF310FD00AC65C8 /* ChooseSampleTableViewCell.swift in Sources */,
+				3857A4772AF14B1300E2CE84 /* AudioMixer.swift in Sources */,
+				387F17272AF2E74E00AC65C8 /* AudioSampleFactory.swift in Sources */,
+				3887E6F92AF68F1E0094C725 /* MultisliderControl.swift in Sources */,
+				38174F492AF7F7C000B0EAEC /* UIImage+Insets.swift in Sources */,
+				3887E6EA2AF561970094C725 /* AudioMixingManager.swift in Sources */,
 				383FD5C12AF03D6E000D02E4 /* AppDelegate.swift in Sources */,
+				38F524D52AF6C7930014B83A /* AudioEffectMultisliderControlPresentable.swift in Sources */,
+				387F17932AF3E22300AC65C8 /* ContextMenuSuitable.swift in Sources */,
+				387F172D2AF30FD900AC65C8 /* ContextMenuViewController.swift in Sources */,
+				387F170D2AF2D9CF00AC65C8 /* AudioSample.swift in Sources */,
+				3857A4112AF13EAC00E2CE84 /* Shadow.swift in Sources */,
 				383FD5C32AF03D6E000D02E4 /* SceneDelegate.swift in Sources */,
+				38174F472AF7E19900B0EAEC /* AVAudioFile+Sampling.swift in Sources */,
+				387F17962AF3E2E200AC65C8 /* ChooseSampleContextMenuView.swift in Sources */,
+				3887E6F72AF68CFB0094C725 /* UISlider+init.swift in Sources */,
+				3887E6FB2AF693800094C725 /* String+UIImage.swift in Sources */,
+				3857A4752AF14A3700E2CE84 /* AudioLayer.swift in Sources */,
+				38F524D92AF7003F0014B83A /* BeatTrackerView.swift in Sources */,
+				387F172B2AF2F2E000AC65C8 /* ContextMenu.swift in Sources */,
+				3857A40F2AF13AC300E2CE84 /* SampleButton.swift in Sources */,
+				38C4037E2AF8215900B5DD82 /* AudioOutputRecorder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
