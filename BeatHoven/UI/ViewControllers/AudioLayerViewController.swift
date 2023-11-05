@@ -99,8 +99,8 @@ final class AudioLayerViewController: UIViewController {
     
     private func configureRecordButton() {
         recordButton.setImage(UIImage(named: "record")?.withInset(.init(top: 64, left: 64, bottom: 64, right: 64)), for: .normal)
-        recordButton.backgroundColor = .white
-        recordButton.tintColor = .black
+        recordButton.backgroundColor = AudioOutputRecorder.shared.isRecording ? .black : .white
+        recordButton.tintColor = AudioOutputRecorder.shared.isRecording ? .white : .red
         recordButton.largeContentImageInsets = .init(top: 8, left: 8, bottom: 8, right: 8)
         recordButton.layer.cornerRadius = 8
         recordButton.apply(shadow: .init(elevation: 1))
@@ -201,7 +201,6 @@ extension AudioLayerViewController: ChooseLayerContextMenuViewDelegate, ChooseLa
         mixingManager?.audioMixingManagerNumberOfLayers() ?? 0
     }
     
-    // TODO: Избавиться от force unwrap-а.
     func chooseLayerContextMenuView(layerViewModelForIndex layerIndex: Int) -> AudioLayer.ViewModel {
         mixingManager!.audioMixingManager(layerForIndex: layerIndex).viewModel
     }

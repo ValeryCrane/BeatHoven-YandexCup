@@ -108,7 +108,8 @@ extension SampleButton {
         static func classic(instrument: AudioInstrument) -> Self {
             .init(
                 instrument: instrument,
-                backgroundColor: .white,
+                // Потому что нестабильно работает.
+                backgroundColor: instrument != .vocal ? .white : .yellow,
                 activeBackgroundColor: .green
             )
         }
